@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temu Global Products Only</title>
+  <title data-i18n="extensionName">Temu Global Products Only</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>Temu Global Products Only</h1>
+      <h1 data-i18n="popupTitle">Temu Global Products Only</h1>
     </div>
     
     <div class="control-section">
       <div class="toggle-container">
         <label class="toggle-label">
-          <span class="toggle-text">Filtre Durumu</span>
+          <span class="toggle-text" data-i18n="filterStatus">Filter Status</span>
           <div class="toggle-switch">
             <input type="checkbox" id="filterToggle" checked>
             <span class="slider"></span>
@@ -25,13 +25,13 @@
       
       <div class="status">
         <span class="status-indicator" id="statusIndicator">●</span>
-        <span class="status-text" id="statusText">Aktif</span>
+        <span class="status-text" id="statusText" data-i18n="statusActive">Active</span>
       </div>
     </div>
     
     <div class="info-section">
-      <p class="info-text">
-        Bu eklenti Temu'da yerel ürünleri gizler ve sadece global ürünleri gösterir.
+      <p class="info-text" data-i18n="infoText">
+        This extension hides local products on Temu and shows only global products.
       </p>
     </div>
 

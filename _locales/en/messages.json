@@ -1,0 +1,39 @@
+{
+  "extensionName": {
+    "message": "Temu Global Products Only",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Hides local products on Temu and shows only global products",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Temu Global Products Only",
+    "description": "Popup header title"
+  },
+  "filterStatus": {
+    "message": "Filter Status",
+    "description": "Toggle label"
+  },
+  "statusActive": {
+    "message": "Active",
+    "description": "Status when filter is on"
+  },
+  "statusInactive": {
+    "message": "Inactive",
+    "description": "Status when filter is off"
+  },
+  "infoText": {
+    "message": "This extension filters local warehouse products on Temu and shows only global products.",
+    "description": "Info text in popup"
+  },
+  "loadingTitle": {
+    "message": "Loading Global Products Only",
+    "description": "Loading modal title"
+  },
+  "loadingSubtitle": {
+    "message": "Filtering local products...",
+    "description": "Loading modal subtitle"
+  }
+}
+

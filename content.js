@@ -85,6 +85,14 @@
   function showFilterPopup() {
     if (filterPopup) return; // Don't add twice
 
+    // Detect language from browser (fallback to English)
+    const lang = navigator.language.toLowerCase();
+    console.log("[Temu Filter] Language:", lang);
+    const isTurkish = lang.startsWith('tr');
+
+    const loadingTitle = isTurkish ? 'Global Ürünler Yükleniyor' : 'Loading Global Products Only';
+    const loadingSubtitle = isTurkish ? 'Yerel ürünler filtreleniyor...' : 'Filtering local products...';
+
     filterPopup = document.createElement('div');
     filterPopup.id = 'temu-filter-popup';
     filterPopup.style.cssText = `
@@ -127,12 +135,12 @@
           font-size: 20px;
           font-weight: 600;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        ">Loading Global Products Only</div>
+        ">${loadingTitle}</div>
         <div style="
           color: #666;
           font-size: 14px;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        ">Filtering local products...</div>
+        ">${loadingSubtitle}</div>
       </div>
       <style>
         @keyframes spin {

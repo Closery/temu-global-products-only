@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Temu Global Products Only",
+  "name": "__MSG_extensionName__",
   "version": "1.0.0",
-  "description": "Temu'da yerel ürünleri gizler ve sadece global ürünleri gösterir",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
   "permissions": [
     "storage",
     "activeTab",

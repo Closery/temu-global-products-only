@@ -1,0 +1,39 @@
+{
+  "extensionName": {
+    "message": "Temu Yerel Ürünleri Gizle",
+    "description": "Eklenti adı"
+  },
+  "extensionDescription": {
+    "message": "Temu'da yerel ürünleri gizler ve sadece global ürünleri gösterir",
+    "description": "Eklenti açıklaması"
+  },
+  "popupTitle": {
+    "message": "Temu Global Products Only",
+    "description": "Popup başlık"
+  },
+  "filterStatus": {
+    "message": "Filtre Durumu",
+    "description": "Toggle etiketi"
+  },
+  "statusActive": {
+    "message": "Aktif",
+    "description": "Filtre açıkken durum"
+  },
+  "statusInactive": {
+    "message": "Pasif",
+    "description": "Filtre kapalıyken durum"
+  },
+  "infoText": {
+    "message": "Bu eklenti Temu'da yerel ürünleri gizler ve sadece global ürünleri gösterir.",
+    "description": "Popup bilgi metni"
+  },
+  "loadingTitle": {
+    "message": "Global Ürünler Yükleniyor",
+    "description": "Yükleme modal başlık"
+  },
+  "loadingSubtitle": {
+    "message": "Yerel ürünler filtreleniyor...",
+    "description": "Yükleme modal alt başlık"
+  }
+}
+

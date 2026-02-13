@@ -1,6 +1,15 @@
 // Temu Global Products Only - Popup Script
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Load i18n messages
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    const message = chrome.i18n.getMessage(key);
+    if (message) {
+      element.textContent = message;
+    }
+  });
+
   const filterToggle = document.getElementById('filterToggle');
   const statusIndicator = document.getElementById('statusIndicator');
   const statusText = document.getElementById('statusText');
@@ -42,10 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateStatus(isEnabled) {
     if (isEnabled) {
       statusIndicator.className = 'status-indicator active';
-      statusText.textContent = 'Aktif';
+      statusText.textContent = chrome.i18n.getMessage('statusActive');
     } else {
       statusIndicator.className = 'status-indicator inactive';
-      statusText.textContent = 'Pasif';
+      statusText.textContent = chrome.i18n.getMessage('statusInactive');
     }
   }
 });

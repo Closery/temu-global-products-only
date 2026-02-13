@@ -1,78 +1,85 @@
 # Temu Global Products Only
 
-Temu'da sadece global ürünleri gösteren, yerel ürünleri gizleyen bir tarayıcı eklentisi.
+**English** | [Türkçe](README.tr.md)
 
-Bu eklenti ürünleri sadece görsel olarak gizlemez; API seviyesinde doğrudan filtreleme yapar. Yani aramalarınız, sunucuda yalnızca global ürünler gelecek şekilde işlenir.
+A browser extension that shows only global products on Temu, hiding local warehouse products.
 
-## 🚀 Kurulum
+This extension doesn't just hide products visually; it filters them at the API level. Your searches are processed on the server to return only global products.
 
-### Chrome için
+## 🚀 Installation
 
-1. Bu repoyu indirin veya ZIP olarak çıkarın
-2. Chrome'da `chrome://extensions/` adresine gidin
-3. Sağ üst köşeden **Geliştirici modu**'nu açın
-4. **Paketlenmemiş öğe yükle** butonuna tıklayın
-5. İndirdiğiniz klasörü seçin
+### For Chrome
 
-### Firefox için
+1. Download or clone this repository
+2. Go to `chrome://extensions/` in Chrome
+3. Enable **Developer mode** in the top right corner
+4. Click **Load unpacked**
+5. Select the downloaded folder
 
-1. Bu repoyu indirin veya ZIP olarak çıkarın
-2. Firefox'ta `about:debugging#/runtime/this-firefox` adresine gidin
-3. **Geçici Eklenti Yükle** butonuna tıklayın
-4. İndirdiğiniz klasördeki `manifest.json` dosyasını seçin
+### For Firefox
 
-**Not:** Firefox'ta eklenti geçici olarak yüklenecektir. Tarayıcı her kapatıldığında tekrar yüklemeniz gerekecektir. Kalıcı kullanım için eklentinin Mozilla tarafından imzalanması gerekir. En kısa sürede ilgileneceğim.
+1. Download or clone this repository
+2. Go to `about:debugging#/runtime/this-firefox` in Firefox
+3. Click **Load Temporary Add-on**
+4. Select the `manifest.json` file from the downloaded folder
 
-## 💻 Kullanım
+**Note:** In Firefox, the extension will be loaded temporarily. You'll need to reload it each time you restart the browser. For permanent use, the extension needs to be signed by Mozilla. I'll work on this soon.
 
-1. Eklentiyi yükledikten sonra tarayıcınızın sağ üst köşesinde eklenti simgesi görünecektir
-2. Simgeye tıklayarak eklentiyi açın
-3. Toggle switch ile filtreyi açıp kapatabilirsiniz
-4. Ayar değiştirdikten sonra Temu sayfaları otomatik yenilenir.
+## 💻 Usage
 
-## 🔧 Nasıl Çalışır?
+1. After installing, you'll see the extension icon in the top right corner of your browser
+2. Click the icon to open the extension
+3. Use the toggle switch to enable or disable the filter
+4. After changing the setting, Temu pages will automatically reload
 
-Eklenti, Temu'nun API isteklerini yakalar ve `semiManaged` parametresini `false` olarak değiştirir. Bu sayede:
+## 🔧 How It Works
 
-- ❌ Yerel ürünler gizlenir
-- ✅ Sadece global ürünler gösterilir
+The extension intercepts Temu's API requests and modifies the `semiManaged` parameter to `false`. This way:
 
-## 📝 Teknik Detaylar
+- ❌ Local warehouse products are filtered out
+- ✅ Only global products are shown
 
-### Dosya Yapısı
+## 📝 Technical Details
+
+### File Structure
 
 ```
 temu-global-products-only/
-├── manifest.json      # Extension yapılandırması
-├── content.js         # API isteklerini yakalar
-├── popup.html         # Popup arayüzü
-├── popup.css          # Popup stilleri
-├── popup.js           # Popup mantığı
+├── manifest.json      # Extension configuration
+├── content.js         # Intercepts API requests
+├── popup.html         # Popup UI
+├── popup.css          # Popup styles
+├── popup.js           # Popup logic
+├── _locales/          # Multi-language support
 ├── icon16.png         # 16x16 icon
 ├── icon48.png         # 48x48 icon
 ├── icon128.png        # 128x128 icon
-└── README.md          # Bu dosya
+└── README.md          # This file
 ```
 
 ### API Interception
 
-Eklenti, `XMLHttpRequest` API'sini kullanarak Temu'nun `/api/poppy/v1/search` endpoint'ine yapılan istekleri yakalar ve modifiye eder:
+The extension uses the `XMLHttpRequest` API to intercept and modify requests to Temu's `/api/poppy/v1/search` endpoint:
 
 ```javascript
-// semiManaged parametresini false yap
+// Set semiManaged parameter to false
 data.semiManaged = false;
 ```
 
+## 🌍 Multi-Language Support
 
-## 📄 Lisans
+The extension automatically detects your browser language:
+- 🇬🇧 English
+- 🇹🇷 Turkish
 
-MIT License - Özgürce kullanabilirsiniz.
+## 📄 License
 
-## 🤝 Katkıda Bulunma
+MIT License - Feel free to use it.
 
-Pull request'ler kabul edilir. Büyük değişiklikler için önce bir issue açmanız daha iyi olur.
+## 🤝 Contributing
 
-## ⚠️ Yasal Uyarı
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Bu eklenti eğitim amaçlıdır. Temu'nun kullanım koşullarını ihlal edebilir. Kendi sorumluluğunuzda kullanın.
+## ⚠️ Legal Notice
 
+This extension is for educational purposes. It may violate Temu's terms of service. Use at your own risk.
