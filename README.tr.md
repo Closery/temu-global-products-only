@@ -80,7 +80,14 @@ MIT License - Özgürce kullanabilirsiniz.
 
 Pull request'ler kabul edilir. Büyük değişiklikler için önce bir issue açmanız daha iyi olur.
 
-## ⚠️ Yasal Uyarı
+## ⚠️ Yasal Bilgilendirme
 
-Bu eklenti eğitim amaçlıdır. Temu'nun kullanım koşullarını ihlal edebilir. Kendi sorumluluğunuzda kullanın.
+Bu RESMI OLMAYAN bir eklentidir ve Temu ile hiçbir şekilde bağlantılı, onaylanmış 
+veya ilişkili DEĞİLDİR. Bu eklenti yalnızca eğitim ve kişisel kullanım için 
+sağlanmıştır. Riski size aittir.
+
+Bu eklentiyi kullanarak şunları kabul etmiş olursunuz:
+- Temu'nun Hizmet Şartlarını ihlal edebilir
+- Temu hesabınızı engelleyebilir veya kısıtlayabilir
+- Geliştiriciler herhangi bir sonuçtan sorumlu değildir
 

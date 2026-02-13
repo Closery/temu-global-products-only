@@ -80,6 +80,13 @@ MIT License - Feel free to use it.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## ⚠️ Legal Notice
+## ⚠️ Disclaimer
 
-This extension is for educational purposes. It may violate Temu's terms of service. Use at your own risk.
+This is an UNOFFICIAL extension and is NOT affiliated with, endorsed by, 
+or connected to Temu in any way. This extension is provided for educational 
+and personal use only. Use at your own risk.
+
+By using this extension, you acknowledge that:
+- It may violate Temu's Terms of Service
+- Temu may block or restrict your account
+- The developers are not responsible for any consequences
