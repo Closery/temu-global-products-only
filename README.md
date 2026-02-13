@@ -1,3 +1,5 @@
+![Temu Global Products Only Screenshot](https://github.com/Closery/temu-global-products-only/blob/main/Screenshot.png)
+
 # Temu Global Products Only
 
 **English** | [Türkçe](README.tr.md)
